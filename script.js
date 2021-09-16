@@ -19,6 +19,14 @@ buttonStop.onclick = function (){
     clearInterval(intervalID)
 }
 
+buttonReset.onclick = function (){
+    clearInterval(intervalID)
+    tenMillis = 0; seconds = 0; minutes = 0;
+    appendTens.textContent = "00"
+    appendSeconds.textContent = "00"
+    appendMinutes.textContent ="00"
+}
+
 // 10ms 마다 시간에 대한 숫자가 증가한다.
 function operateTimer() {
     tenMillis++;
