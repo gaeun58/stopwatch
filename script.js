@@ -8,9 +8,15 @@ const appendMinutes = document.getElementById("minutes");
 const buttonStart = document.getElementById("bt_start");
 const buttonStop = document.getElementById("bt_stop");
 const buttonReset = document.getElementById("bt_reset");
+let intervalID;
 
 buttonStart.onclick = function (){
-    setInterval(operateTimer, 10)
+    clearInterval(intervalID)
+    intervalID = setInterval(operateTimer, 10)
+}
+
+buttonStop.onclick = function (){
+    clearInterval(intervalID)
 }
 
 // 10ms 마다 시간에 대한 숫자가 증가한다.
