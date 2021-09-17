@@ -44,3 +44,40 @@ function operateTimer() {
         appendSeconds.textContent = "00"
     }
 }
+
+/*
+ var sec = 0;
+        var min = 0;
+        var hour = 0;
+        var t;
+     function increaseTime(){
+        sec++;
+        if (sec >= 60) {
+        sec = 0;
+        min++;
+        }
+        if (min >= 60) {
+            min = 0;
+            hour++;
+        }
+        console.log("asdfasdf");
+        document.getElementsByClassName('time')[0].innerHTML = String(hour >= 10 ? hour : "0"+String(hour))
+         + ":" + String(min >= 10 ? min : "0"+String(min))
+         + ":" + String(sec >= 10 ? sec : "0"+String(sec))
+
+        startWatch();
+      }
+
+      function startWatch(){
+          t = setTimeout(increaseTime,1000);
+      }
+      function stop(){
+          clearTimeout(t);
+      }
+      function clearTime(){
+          document.getElementsByClassName('time')[0].innerHTML = "00:00:00";
+          sec = 0;
+          min = 0;
+          hour = 0;
+      }
+*/
